@@ -86,7 +86,8 @@
       :desc "sexp forward barf" :n "> b" #'sp-forward-barf-sexp
       :desc "sexp backward slurp" :n "< s" #'sp-backward-slurp-sexp
       :desc "sexp backward barf" :n "< b" #'sp-backward-barf-sexp
-      :desc "jump to word" :n "SPC j w" #'avy-goto-word-1)
+      :desc "jump to word" :n "SPC j w" #'avy-goto-word-1
+      :desc "show/copy full error message" :n "SPC e y" #'flycheck-copy-errors-as-kill)
 
 (after! cider
   (setq cider-enrich-classpath t)
